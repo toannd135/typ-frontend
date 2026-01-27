@@ -22,7 +22,7 @@ spec:
 
           {{- if .Values.healthCheck.enable }}
           livenessProbe: {{- toYaml .Values.healthCheck.livenessProbe | nindent 12 }}
-          readnessProbe: {{- toYaml .Values.healthCheck.readinessProbe | nindent 12 }}
+          readinessProbe: {{- toYaml .Values.healthCheck.readinessProbe | nindent 12 }}
           {{- end }}
           
           resources: {{- toYaml .Values.resources | nindent 12 }}
