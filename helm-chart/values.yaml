@@ -2,7 +2,7 @@ replicaCount: 1
 
 image: 
   repository: toannd135/frontend-app
-  tag: v3
+  tag: v4
   pullPolicy: IfNotPresent
 
 resources:
@@ -29,7 +29,7 @@ healthCheck:
     initialDelaySeconds: 5
     periodSeconds: 5
     timeoutSeconds: 10
-  failureThreshold: 3
+    failureThreshold: 3
 
 nodeSelector: {}
 tolerations: []
