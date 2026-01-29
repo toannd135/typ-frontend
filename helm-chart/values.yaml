@@ -2,7 +2,7 @@ replicaCount: 1
 
 image: 
   repository: toannd135/frontend-app
-  tag: v5
+  tag: v7
   pullPolicy: IfNotPresent
 
 resources:
@@ -38,8 +38,8 @@ affinity: {}
 service: 
   port: 80
   targetPort: 80
-  nodePort: 31080
-  type: ClusterIP
+  nodePort: 30001
+  type: NodePort
 
 ingress:
   enabled: true
