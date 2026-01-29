@@ -2,7 +2,7 @@ replicaCount: 1
 
 image: 
   repository: toannd135/frontend-app
-  tag: v7
+  tag: v8
   pullPolicy: IfNotPresent
 
 resources:
@@ -41,9 +41,3 @@ service:
   nodePort: 30001
   type: NodePort
 
-ingress:
-  enabled: true
-  className: nginx
-  host: bookmanager.edu.vn
-  path: / 
-  pathType: Prefix
