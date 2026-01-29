@@ -2,7 +2,7 @@ replicaCount: 1
 
 image: 
   repository: toannd135/frontend-app
-  tag: v8
+  tag: "v8"
   pullPolicy: IfNotPresent
 
 resources:
